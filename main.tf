@@ -21,6 +21,7 @@ resource "aws_vpc" "module_vpc" {
   }
 }
 
+/*
 # Crea un Internet Gateway en AWS y se asocia con la VPC anteriormente creada.
 resource "aws_internet_gateway" "module_internet_gateway" {
   count  = var.internet_gateway_creation ? 1 : 0
@@ -39,4 +40,4 @@ resource "aws_internet_gateway" "module_internet_gateway" {
 
   # Especifica una dependencia explícita con la VPC, garantizando que la VPC se cree antes que el Internet Gateway.
   depends_on = [aws_vpc.module_vpc]
-}
+}*/
